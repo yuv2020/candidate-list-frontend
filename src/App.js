@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // Fetch candidates from the backend
     axios
-      .get("http://localhost:5000")
+      .get("http://localhost:5000/api/candidates")
       .then((response) => {
         console.log("Fetched candidates:", response.data); // Debugging: log fetched data
         setCandidates(response.data);
